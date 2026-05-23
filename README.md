@@ -18,6 +18,16 @@ curl -fsSL https://raw.githubusercontent.com/Westopoli/claude-swarm/main/install
 
 `Claude Code` · `Python` · `TDD`
 
+### [claude-wrap](https://github.com/Westopoli/claude-wrap) — end-of-session save-state for Claude Code
+
+Claude Code skill that closes a session cleanly. Writes a dated pause-block to the project's state file and emits a verbatim resume kickoff to paste into a fresh chat tomorrow. No context loss across sessions.
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/Westopoli/claude-wrap/main/install.sh | bash
+```
+
+`Claude Code` · `Session Management`
+
 ### ETL pipeline _(private, internship)_
 
 PostgreSQL-backed ETL: data ingestion, transformation, scheduled refresh. Built during an ongoing internship.
