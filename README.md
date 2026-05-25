@@ -10,7 +10,7 @@ Python, C. Open-source Claude Code skills, cybersecurity infrastructures at USF.
 
 ### [claude-swarm](https://github.com/Westopoli/claude-swarm) — disciplined parallel-agent TDD for Claude Code
 
-Claude Code skill pack that lets you run many sub-agents in parallel without the usual mess: blocks file collisions before agents spawn, forbids ambiguous design language in task descriptions, caps task size, and reverts merges on regression. Six paired evals — baseline scores 12.5%, skill scores 100%.
+Claude Code skill pack that lets you run many sub-agents in parallel without the usual mess: blocks file collisions before agents spawn, forbids ambiguous design language in task descriptions, caps task size, reverts merges on regression, and coordinates sibling agents via file-mediated channels (shared-assumption reads, a question ledger, and contract proposals) so the cascade stays tree-shaped. Paired evals on the coordination patterns — old skill 78%, new skill 100%.
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/Westopoli/claude-swarm/main/install.sh | bash
