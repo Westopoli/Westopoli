@@ -18,15 +18,15 @@ curl -fsSL https://raw.githubusercontent.com/Westopoli/claude-manager-mode/main/
 
 `Claude Code` · `Python` · `TDD`
 
-### [claude-wrap](https://github.com/Westopoli/claude-wrap) — end-of-session save-state for Claude Code
+### [claude-investigate](https://github.com/Westopoli/claude-investigate) — evidence-first bug diagnosis for Claude Code
 
-Claude Code skill that closes a session cleanly. Writes a dated pause-block to the project's state file and emits a verbatim resume kickoff to paste into a fresh chat tomorrow. No context loss across sessions.
+Claude Code skill that isolates bugs without guessing. Runs one targeted isolation step per round — debug prints, log greps, boundary tests, narrow repros — until the root cause is backed by direct evidence. Outputs HYPOTHESIS / EVIDENCE / SOLUTION and stops. No fixes, no speculation.
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/Westopoli/claude-wrap/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/Westopoli/claude-investigate/main/install.sh | bash
 ```
 
-`Claude Code` · `Session Management`
+`Claude Code` · `Debugging`
 
 ### ETL pipeline _(private, internship)_
 
