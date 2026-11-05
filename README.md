@@ -19,15 +19,20 @@ Multi-era RTS (C simulation, Godot client, byte-deterministic across platforms) 
 
 `Agile` · `TDD` · `CI` · `C` · `Claude Code`
 
-### [claude-manager-mode](https://github.com/Westopoli/claude-manager-mode) — disciplined parallel-agent TDD for Claude Code
+### [claude-manager-mode](https://github.com/Westopoli/claude-manager-mode) — parallel-agent TDD, with the builder never grading itself
 
-Claude Code skill pack that lets you run many sub-agents in parallel without the usual mess: blocks file collisions before agents spawn, forbids ambiguous design language in task descriptions, caps task size, reverts merges on regression, and coordinates sibling agents via file-mediated channels (shared-assumption reads, a question ledger, and contract proposals) so the cascade stays tree-shaped. Paired evals on the coordination patterns — old skill 78%, new skill 100%.
+Skill that turns one spec into a wave of up to 16 sub-agents, each in its own git worktree, each admitted only through a dozen scripted gates.
+
+- **Tests before builders.** A separate writer authors every failing test; a fresh auditor reviews them; leaves only write impl.
+- **Scale is a requirement, not a hope.** Spec states growth claims, tests assert growth ratios, a gate flags quadratic shapes.
+- **Edges are swept, not guessed.** Every shard files a boundary table; unspecified boundaries go to a question ledger, never to a sub-agent's judgment.
+- Paired evals on mistake prevention: 8/8 correct verdicts, coordination suite 100% vs 78% baseline.
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/Westopoli/claude-manager-mode/main/install.sh | bash
 ```
 
-`Claude Code` · `Python` · `TDD`
+`Claude Code` · `Codex` · `TDD`
 
 ### [Jarvis](https://github.com/Westopoli/jarvis) — voice interface for Claude Code sessions
 
