@@ -40,9 +40,11 @@ Pipecat voice pipeline into tmux-hosted Claude Code sessions. Local Ollama model
 
 `Python` · `Pipecat` · `TDD`
 
-### Prosper _(private, freelance)_ — secure desktop database for an insurance agency
+### [Prosper](https://prosper-plan.fly.dev) _(private, freelance)_ — secure desktop database for an insurance agency
 
 Searchable desktop app for sensitive client records, delivered from written requirements and a fixed-price proposal. Built test-first under a written TDD contract: 533 tests, CI for test and deploy, signed releases with a signed update channel.
+
+Architecture walkthrough: [prosper-plan.fly.dev](https://prosper-plan.fly.dev), passcode `Firstwatch`. Update channel: [prosper-updates](https://github.com/Westopoli/prosper-updates).
 
 `Python` · `TDD` · `CI/CD`
 
