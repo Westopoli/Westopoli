@@ -1,12 +1,23 @@
 # Westley Yarlott
 
-CS student + STEM instructor, building AI agent tooling and developer infrastructure.
+CS graduate who builds automation and test suites with AI coding agents.
 
-Python, C. Open-source Claude Code skills, cybersecurity infrastructures at USF.
+QA / test automation and integration, agent-driven SDLC tooling, applied cryptography in C.
 
 [LinkedIn](https://www.linkedin.com/in/westley-yarlott)
 
 ## Projects
+
+### [Ouroboros Manifold](https://github.com/Westopoli/ouroboros-manifold) — a full Agile SDLC run by agent teams
+
+Multi-era RTS (C simulation, Godot client, byte-deterministic across platforms) used as the proving ground for an agent build harness. I design the process and the gates; agents write most of the code.
+
+- **Requirements → stories → tests.** Every story exists as failing tests before any code, in fenced paths builders cannot edit. Stories are accepted by a human, not by the agent that built them.
+- **Test-first, one owner per file.** Frozen contracts (C header, pipe frames) change only as their own documented piece; two in-flight pieces never own the same file.
+- **Merge gate is the only way to main.** Twenty-odd stages: build, equation/signature lints, reachability lint, three test suites, a scripted playthrough of the real client, and an `-O0` vs `-O2` checksum trace that catches any non-determinism.
+- ~5,600 commits in two months; harness measured, broken, and rebuilt three times.
+
+`Agile` · `TDD` · `CI` · `C` · `Claude Code`
 
 ### [claude-manager-mode](https://github.com/Westopoli/claude-manager-mode) — disciplined parallel-agent TDD for Claude Code
 
@@ -18,15 +29,17 @@ curl -fsSL https://raw.githubusercontent.com/Westopoli/claude-manager-mode/main/
 
 `Claude Code` · `Python` · `TDD`
 
-### [claude-investigate](https://github.com/Westopoli/claude-investigate) — evidence-first bug diagnosis for Claude Code
+### [Jarvis](https://github.com/Westopoli/jarvis) — voice interface for Claude Code sessions
 
-Claude Code skill that isolates bugs without guessing. Runs one targeted isolation step per round — debug prints, log greps, boundary tests, narrow repros — until the root cause is backed by direct evidence. Outputs HYPOTHESIS / EVIDENCE / SOLUTION and stops. No fixes, no speculation.
+Pipecat voice pipeline into tmux-hosted Claude Code sessions. Local Ollama model with automatic cloud failover, phone route with a caller allow-list, exposed over Tailscale. Spec-first: three specs built as manager-mode cascades, 46 test files.
 
-```bash
-curl -fsSL https://raw.githubusercontent.com/Westopoli/claude-investigate/main/install.sh | bash
-```
+`Python` · `Pipecat` · `TDD`
 
-`Claude Code` · `Debugging`
+### Prosper _(private, freelance)_ — secure desktop database for an insurance agency
+
+Searchable desktop app for sensitive client records, delivered from written requirements and a fixed-price proposal. Built test-first under a written TDD contract: 533 tests, CI for test and deploy, signed releases with a signed update channel.
+
+`Python` · `TDD` · `CI/CD`
 
 ### ETL pipeline _(private, internship)_
 
